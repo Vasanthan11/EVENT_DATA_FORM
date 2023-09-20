@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT DATA FORM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./EVENT.css">
+</head>
+
+<body>
+    <div class="eventData">
+
+        <div class="imageblock">
+
+        </div>
+
+        <form action="#" method="post" id="DataForm">
+            <h1>ENQUIRY FORM</h1>
+
+            <div class="input-group">
+                <label for="your_name">Your Name</label>
+                <input type="text" name="Client_Name" id="your_name">
+                <p class="error"></p>
+            </div>
+
+            <div class="input-group">
+                <label for="company_name">Comany Name</label>
+                <input type="text" name="Company_Name" id="company_name">
+                <p class="error"></p>
+            </div>
+
+            <div class="input-group">
+                <label for="phone_number">Daytime Phone</label>
+                <input type="text" name="Phone_Number" id="phone_number" placeholder="Ex: +911234567890">
+                <p class="error"></p>
+            </div>
+
+            <div class="input-group">
+                <label for="E-mail">Your E-mail Address</label>
+                <input type="text" name="Mail_Id" id="E-mail">
+                <p class="error"></p>
+            </div>
+
+            <div class="input-group">
+                <label for="Event">Type Of Event</label>
+                <select name="Event_Type" id="Event">
+                    <option selected disabled id="default">Select the type of Event</option>
+                    <option value="Conference">Conference</option>
+                    <option value="Workshops">Workshops</option>
+                    <option value="Seminars">Seminars</option>
+                    <option value="Launch_Event">Launch Event</option>
+                    <option value="Corporate_Dinner">Corporate Dinner</option>
+                    <option value="Ceremonies">Ceremonies</option>
+                    <option value="others">others</option>
+                </select>
+                <p class="error"></p>
+            </div>
+
+            <div class="second_input">
+                <div class="input-group">
+                    <label for="evdate">Event Date</label>
+                    <input type="date" name="Event_Date" id="evdate">
+                    <p class="error"></p>
+                </div>
+
+                <div class="input-group">
+                    <label for="evtime">Event Timing</label>
+                    <input type="time" name="Event_Timing" id="evtime">
+                    <p class="error"></p>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="loc">Location</label>
+                <input type="text" name="Location" id="loc" size="40">
+                <p class="error"></p>
+            </div>
+
+            <div class="second_input">
+                <div class="input-group">
+                    <label for="budget">Total Budget</label>
+                    <input type="text" name="Budget" id="budget" placeholder="Ex: 00000">
+                    <p class="error"></p>
+                </div>
+
+                <div class="input-group">
+                    <label for="people">No. Of. People </label>
+                    <input type="number" name="Total_People" id="people">
+                    <p class="error"></p>
+                </div>
+            </div>
+
+            <input type="submit" id="button">
+
+        </form>
+
+    </div>
+    <script src="./EVENT.js"></script>
+
+
+</body>
+
+</html>
